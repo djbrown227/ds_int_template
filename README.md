@@ -16,40 +16,6 @@ This template is designed to help you:
 
 ---
 
-## 📁 Project Structure
-
-```
-
-my-data-project/
-├── data/               # Raw and processed data
-│   ├── raw/            # Unmodified original data (CSV, JSON, scraped)
-│   └── processed/      # Cleaned and transformed datasets
-│
-├── notebooks/          # Jupyter notebooks for exploration and modeling
-│   ├── 01\_eda.ipynb
-│   ├── 02\_modeling.ipynb
-│   └── ...
-│
-├── src/                # Python scripts for modular pipeline
-│   ├── fetch/          # Scripts to scrape or fetch data from APIs
-│   ├── prepare/        # Cleaning, feature engineering
-│   ├── eda/            # Plots, summaries
-│   ├── modeling/       # Model training and evaluation
-│   └── utils/          # Shared helper functions
-│
-├── docs/               # GitHub Pages site (Jekyll-compatible)
-│   ├── index.md        # Main content for project page
-│   ├── \_config.yml     # Jekyll config file
-│   └── assets/         # Charts, images, additional media
-│
-├── requirements.txt    # Python dependencies
-├── .gitignore
-└── README.md           # You're reading it!
-
-````
-
----
-
 ## 🚀 Quick Start
 
 1. **Clone the repo:**
