@@ -1,80 +1,89 @@
-Here's a clear and professional `README.md` file tailored to your data science project template — especially one designed to be used with GitHub Pages + Jekyll:
+Here’s your updated `README.md`, with simplified **folder purpose descriptions** instead of showing the full directory tree:
 
 ---
 
-```markdown
 # 🧪 Data Science Project Template
 
-A clean, modular, and GitHub Pages–ready folder structure for data science projects.
-
-This template is designed to help you:
-- Fetch, store, and clean data
-- Perform exploratory data analysis (EDA)
-- Build and evaluate machine learning models
-- Create visualizations
-- Publish your project results using Jekyll and GitHub Pages
+A lightweight, modular template for structuring data science projects and publishing results using **GitHub Pages + Jekyll**. Ideal for showcasing analysis, models, and visualizations in a clear and reproducible way.
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Features
 
-1. **Clone the repo:**
+* **Jupyter notebooks** organized by step: fetch, clean, model, visualize
+* **Raw vs processed data** separation for reproducibility
+* **Modular scripts** to automate common tasks
+* **Built-in publishing** with GitHub Pages and Jekyll
+* **Requirements file** for easy environment setup
+
+---
+
+## 🗂️ Folder Structure & Purpose
+
+* `data/`: Store all datasets
+
+  * `raw/`: Original, unedited datasets
+  * `processed/`: Cleaned or transformed data for analysis
+
+* `docs/`: Public-facing project site built with Jekyll (auto-served by GitHub Pages)
+
+  * Includes homepage (`index.md`), config file (`_config.yml`), and static assets (images, styles, JS)
+
+* `images/`: Extra visuals used in notebooks or reports
+
+* `notebooks/`: Step-by-step Jupyter notebooks
+
+  * Fetch data → Clean & EDA → Modeling → Visualization
+
+* `scripts/`: Reusable Python code
+
+  * Data fetching and cleaning logic separated from notebooks
+
+* `requirements.txt`: List of Python dependencies for setting up the environment
+
+* `README.md`: Overview of the project, structure, and instructions
+
+---
+
+## 🛠️ How to Use
+
+1. **Clone this repo** and set up your environment
+
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
-````
-
-2. **Install dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/your-username/your-repo.git  
+   cd your-repo  
+   pip install -r requirements.txt  
    ```
 
-3. **Add your data:**
+2. **Run notebooks** in order (`notebooks/`)
 
-   * Place original datasets in `data/raw/`
-   * Use `src/fetch/` or `src/prepare/` to create processed versions in `data/processed/`
+   * Use provided `scripts/` to avoid redundant code
 
-4. **Do your work:**
+3. **Add your analysis and visuals**
 
-   * Analyze and explore in `notebooks/`
-   * Build models in `src/modeling/`
+   * Save images or charts in `images/` or `docs/assets/images/` if publishing
 
-5. **Publish results:**
+4. **Customize the site**
 
-   * Write up your findings in `docs/index.md`
-   * GitHub Pages will serve the site from the `docs/` folder
+   * Edit `docs/index.md` and `_config.yml`
+   * Push to `main` branch and enable GitHub Pages via repo settings
 
 ---
 
-## 🌐 GitHub Pages Setup
+## 🌐 GitHub Pages Publishing
 
-1. Go to your repo settings → Pages
-2. Under **Source**, select:
-
-   * **Branch**: `main`
-   * **Folder**: `/docs`
-3. Save → Your project site will be live at:
-
-   ```
-   https://yourusername.github.io/your-repo-name/
-   ```
+* GitHub will automatically build your site from the `docs/` folder.
+* Make sure Jekyll is enabled and `docs/_config.yml` has basic settings like title and theme.
+* Customize your site homepage via `docs/index.md`.
 
 ---
 
-## 🛠️ Tech Stack
+## 📦 Requirements
 
-* **Python**, Jupyter, Pandas, Scikit-learn, Matplotlib, Seaborn
-* **Jekyll** (via GitHub Pages)
-* Optional: Plotly, XGBoost, Statsmodels, BeautifulSoup, etc.
+Install all Python dependencies with:
 
----
-
-## 🧠 Why Use This Template?
-
-* Keeps code modular and maintainable
-* Encourages reproducibility and clarity
-* Lets you turn your project into a public portfolio piece
-* Supports solo work, pair programming, or even team collaborations
+```bash
+pip install -r requirements.txt
+```
 
 ---
